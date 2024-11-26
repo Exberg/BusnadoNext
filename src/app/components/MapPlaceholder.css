@@ -1,0 +1,37 @@
+.map-placeholder {
+    position: relative;
+    height: 284px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .map-text {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .map-pin {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
+    background-color: #ff0000;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+  }
+  
+  .map-pin::after {
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
