@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Link from 'next/link';
 import "./NavBar.css";
 
 function Navbar() {
@@ -21,11 +22,11 @@ function Navbar() {
                 <h2 className="logo-text">Busnado</h2>
             </div>
             <nav ref={navRef}>
-                <a href="/">Home</a>
-                <a href="/feedback">Feedback</a>
-                <a href="/manual">Manual</a>
-                <a href="/about">About</a>
-                <a href="/admin">Admin</a>
+                <Link href="/">Home</Link>
+                <Link href="/feedback">Feedback</Link>
+                <Link href="/manual">Manual</Link>
+                <Link href="/about">About</Link>
+                <Link href="/admin">Admin</Link>
                 <button className="nav-btn nav-close-btn" onClick={showNavbar}>
                     <FaTimes />
                 </button>

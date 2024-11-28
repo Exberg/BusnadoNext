@@ -2,7 +2,7 @@
 import { Metadata } from "next";
 import { Concert_One } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar";
+import Navbar from "./components/NavBar";
 
 // Import Concert One font
 const concertOne = Concert_One({

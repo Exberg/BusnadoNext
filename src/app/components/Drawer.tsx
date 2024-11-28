@@ -9,6 +9,7 @@ const snapPoints = ['200px', '340px', 0.91];
 
 export default function VaulDrawer() {
   // Set the initial snap point to fully open
+  //const [snap, setSnap] = useState<string | number | null>(null);
   const [snap, setSnap] = useState(snapPoints[0]);
 
   return (
@@ -18,7 +19,7 @@ export default function VaulDrawer() {
       setActiveSnapPoint={setSnap}
       snapToSequentialPoint
       open={true} // Keep the drawer always open
-      dismissable={false} // Prevent any user action from closing the drawer
+      dismissible={false} // Prevent any user action from closing the drawer
     >
       {/* Removed Drawer.Trigger since it's always open */}
       <Drawer.Overlay className="fixed inset-0 bg-black/40" />
