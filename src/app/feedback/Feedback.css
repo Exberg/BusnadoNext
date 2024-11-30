@@ -1,0 +1,100 @@
+/* General container */
+.feedback-container {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /*Tq feedback*/
+  .tq-container{
+    padding: 30px;
+    height: 450px;
+    color: #000000;
+  }
+
+  .tq-container h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin:20px auto 50px;
+  }
+
+  .link-style {
+    font-size: 16px;
+    color: #0000EE;
+  }
+
+  /* Feedback Form */
+  .feedback-form {
+    padding: 30px;
+    color: #000000;
+  }
+  
+  .feedback-form h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .feedback-form p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  .feedback-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .star-rating {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #ddd;
+    cursor: pointer;
+    margin-right: 5px;
+  }
+  
+  .star:hover,
+  .star:focus {
+    color: #ffda44;
+  }
+  
+  textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #5249ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .submit-btn:hover {
+    background-color: #271fbc;
+  }
+  
