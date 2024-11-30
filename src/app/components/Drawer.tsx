@@ -9,8 +9,8 @@ const snapPoints = ['200px', '340px', 0.91];
 
 export default function VaulDrawer() {
   // Set the initial snap point to fully open
-  //const [snap, setSnap] = useState<string | number | null>(null);
-  const [snap, setSnap] = useState(snapPoints[0]);
+  const [snap, setSnap] = useState<string | number | null>(null);
+  //const [snap, setSnap] = useState(snapPoints[0]);
 
   return (
     <Drawer.Root
