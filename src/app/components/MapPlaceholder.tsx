@@ -1,47 +1,47 @@
-"use client";
+'use client';
 
-import { useState } from "react";
-import {
-  APIProvider,
-  Map,
-  AdvancedMarker,
-  Pin,
-  InfoWindow,
-} from "@vis.gl/react-google-maps";
+import React, { useState, useCallback } from 'react';
+import { Map, Marker, MapCameraChangedEvent } from '@vis.gl/react-google-maps';
+import './MapPlaceholder.css';
+import busStops from './Markers';
 
-export default function Intro() {
-  const position = { lat: 53.54, lng: 10 };
-  const [open, setOpen] = useState(false);
+const MapPlaceholder = ({ isLoaded }) => {
+  const [mapCenter, setMapCenter] = useState({
+    lat: 1.560588,
+    lng: 103.635380
+  });
+  const [zoom, setZoom] = useState(15);
 
-  const handleMarkerClick = () => {
-    console.log("Marker clicked");
-    setOpen(true);
-  };
-
-  const handleInfoWindowClose = () => {
-    console.log("InfoWindow closed");
-    setOpen(false);
-  };
+  const onCameraChanged = useCallback((ev: MapCameraChangedEvent) => {
+    setMapCenter(ev.detail.center);
+    setZoom(ev.detail.zoom);
+  }, []);
 
   return (
-    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY}>
-      <div style={{ height: "100vh", width: "100%" }}>
-        <Map zoom={9} center={position} mapId={process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY}>
-          <AdvancedMarker position={position} onClick={handleMarkerClick}>
-            <Pin
-              background={"grey"}
-              borderColor={"green"}
-              glyphColor={"purple"}
+    <div className="map-placeholder">
+      {isLoaded ? (
+        <Map
+          zoom={zoom}
+          center={mapCenter}
+          mapId="e13a76220dccc6cd"
+          gestureHandling={'greedy'}
+          disableDefaultUI={false}
+          onCameraChanged={onCameraChanged}
+        >
+          {busStops.map((marker) => (
+            <Marker
+              key={marker.id}
+              position={marker.position}
+              title={marker.title}
             />
-          </AdvancedMarker>
-
-          {open && (
-            <InfoWindow position={position} onCloseClick={handleInfoWindowClose}>
-              <p>I'm in Hamburg</p>
-            </InfoWindow>
-          )}
+          ))}
         </Map>
-      </div>
-    </APIProvider>
+      ) : (
+        <div className="map-text">Loading map...</div>
+      )}
+    </div>
   );
-}
+};
+
+export default MapPlaceholder;
+

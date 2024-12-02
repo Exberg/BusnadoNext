@@ -21,7 +21,6 @@ export default function VaulDrawer() {
       dismissable={false} // Prevent any user action from closing the drawer
     >
       {/* Removed Drawer.Trigger since it's always open */}
-      <Drawer.Overlay className="fixed inset-0 bg-black/40" />
       <Drawer.Portal>
         <Drawer.Content
           data-testid="content"

@@ -1,19 +1,12 @@
 'use client';
 
 import Drawer from './components/Drawer.tsx'
-import MapPlaceholder from './components/MapPlaceholder'
-import { mapOptions } from './components/MapConfig';
-import { useJsApiLoader } from '@react-google-maps/api';
+import MapWrapper from './components/MapWrapper';
 
 export default function Page() {
-
-  const { isLoaded } = useJsApiLoader({
-    id: mapOptions.googleMapApiKey,
-    googleMapsApiKey: mapOptions.googleMapApiKey,
-  })
   return (
     <div>
-      <MapPlaceholder isLoaded={isLoaded} />
+      <MapWrapper/>
       <Drawer />
     </div>
   )
