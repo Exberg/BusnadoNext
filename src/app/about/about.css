@@ -1,0 +1,10 @@
+/* Container styling to center content and add spacing */
+.about-container {
+    max-width: 800px; /* Sets a limit to the width of the content */
+    margin: 10 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds spacing between content and the edge */
+  }
+  .about-container p {
+    margin-bottom: 30px;
+  }
+  
