@@ -3,6 +3,8 @@
 import React from 'react';
 import { useRouter } from "next/navigation";   // Import for React Router
 import './AdminLoginPage.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser, faKey, faRightToBracket} from "@fortawesome/free-solid-svg-icons";
 
 const AdminLoginPage = () => {
 
@@ -11,13 +13,12 @@ const AdminLoginPage = () => {
     <div className="admin-login-page">
       <div className="background">
         <div className="user">
-          <img src="/user.svg" alt="user logo" />
+          <FontAwesomeIcon icon={faUser} size="2x" />
         </div>
         <div className="login-as-admin">Login as Admin</div>
-
         <div className="input-user">
           <div className="user-icon">
-            <img src="/user.svg" alt="user logo" className="u-icon"/>
+            <FontAwesomeIcon icon={faUser} />
           </div>
           <input
           type="text"
@@ -30,7 +31,7 @@ const AdminLoginPage = () => {
 
         <div className="input-pass">
           <div className="password-icon">
-            <img src="/password01.png" alt="pw logo" />
+            <FontAwesomeIcon icon={faKey} />
           </div>
           <input
           type="text"
@@ -43,7 +44,7 @@ const AdminLoginPage = () => {
         
         <button className="login-btn" 
         onClick={() => router.push("/admin/feedback-list")}>
-          <img src="/login.svg" alt="login logo" />
+            <FontAwesomeIcon icon={faRightToBracket} />
           <div className="login-text">login</div>
         </button>
         

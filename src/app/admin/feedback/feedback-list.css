@@ -1,54 +1,64 @@
 .adminfeedback-container {
-    max-width: 600px;
-    margin: 50px auto;
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  .adminfeedback-container h1 {
-    font-size: 24px;
-  }
-  
-  .feedback-card {
-    border: 1px solid #000;
-    border-radius: 10px;
-    padding: 15px;
-    margin: 10px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  .feedback-card h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .feedback-card p {
-    font-size: 14px;
-    color: #333;
-    line-height: 1.4;
-  }
-  
-  .stars {
-    margin-bottom: 10px;
-    font-size: 20px;
-  }
-  
-  .filled-star {
-    color: #ffda44;
-  }
-  
-  .empty-star {
-    color: #ddd;
-  }
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: rgb(255, 255, 255); /* Change text color to black */
+}
 
-  .logout-button{
-    background-color: #2f27ce;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin: 10px 0 5px;
-  }
+.feedback-text {
+  color: black; /* Change text color to black */
+}
+
+.adminfeedback-container h1 {
+  font-size: 24px;
+  color: black; /* Change text color to black */
+}
+
+.feedback-card {
+  border: 1px solid #3800b2; /* Change border color to black */
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: rgb(17, 0, 252); 
+}
+
+.feedback-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black; /* Change text color to black */
+}
+
+.feedback-card p {
+  font-size: 14px;
+  color: black; /* Change text color to black */
+  line-height: 1.4;
+}
+
+.stars {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: black; /* Change text color to black */
+}
+
+.filled-star {
+  color: #ffda44;
+}
+
+.empty-star {
+  color: #ddd;
+}
+
+.logout-button{
+  background-color: #2f27ce;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+
