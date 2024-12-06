@@ -5,7 +5,7 @@ import MapPlaceholder from './MapPlaceholder';
 
 const MapWrapper = () => {
   return (
-    <APIProvider apiKey="AIzaSyBq3i7GAr8lKn4u8qCHX1DHd7Vvs6ocRIA">
+    <APIProvider apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAP_API_KEY}>
       <MapPlaceholder isLoaded={true} />
     </APIProvider>
   );
