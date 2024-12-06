@@ -43,7 +43,7 @@
     </style>
     
     <!-- Google Maps JavaScript API -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiVXMW9Aq_EP8fp34qd2Btoa3V4DUtXyQ"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=Your API"></script>
 </head>
 <body>
     <h2>Live Data from Bus Tracking System</h2>
