@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to UTM BUSNADO</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0;
+            font-size: 1.2em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin: 20px 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .card a {
+            text-decoration: none;
+            color: #fff;
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: linear-gradient(135deg, #388E3C, #689F38);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: #ddd;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            .card-container {
+                display: flex;
+                gap: 20px;
+            }
+
+            .card {
+                flex: 1;
+            }
+        }
+    </style>
+    <style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        flex: 1; /* vule gesilam first time so Ensures the content takes up remaining space */
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #222;
+        color: #ddd;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.9em;
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    footer a {
+        color: #4CAF50;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <h1>BUSNADO BUS TRACKING SERVICE</h1>
+        <p>Stay updated with real-time bus tracking and schedules</p>
+    </header>
+
+    <div class="container">
+        <div class="card-container">
+            <div class="card">
+                <h2>View Live Location</h2>
+                <a href="Iz22_aSyDfBbzT2Q5JT4zLHr3UdJ_3vTmWj9QcAxk.php">Go to Map</a>
+            </div>
+
+            <div class="card">
+                <h2>View Live Data (Lat & Lon)</h2>
+                <a href="view_live_data.php">View Data</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Your Live Location & Nearest Bus Stops</h2>
+            <a href="mm.html">View Map</a>
+        </div>
+    </div>
+    /* vule gesilam first time so Ensures that you have added all the correct extensions */
+    <footer>
+        <p>&copy; 2024 BUSNADO | <a href="About.php">About Us</a> | <a href="Feedback.php">Feedback</a></p>
+    </footer>
+</body>
+</html>
