@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Busnado - UTM Bus Tracking
+<p align="center">
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
+<img src="./public/assets/logo512.png" alt="logo" width="50" />
 
-## Getting Started
+---
+### Frontpage UI (Mobile & Desktop Responsive)
+<p align="center">
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExeXV6d2ZheGgyMG9zemRoNmxqaDNhZWF6ZGFpMHA5ZWVtaDJ1azJvbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pM4Hhl8kJNAKvPjBEM/giphy.gif" alt="pic2" />
+  <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExajZocGZ1YzJjZjcyMGdnYXQ3Y3lkMG0xcHZyNmk5OW94ODJvd243OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LpxTr9t786Xro67N4Q/giphy.gif" alt="pic1" />
 
-First, run the development server:
+---
+### Backend with php: http://iotsystem.great-site.net/
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
+## Technology Used
+- Next.js + React
+- Typescript
+- Vaul - sliding drawer
+- MySQL + php
+- Node.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The bus service at Universiti Teknologi Malaysia (UTM) faces several challenges that impact its usability and reliability for students and staff. The timing of buses is inconsistent and frequently off schedule, causing frustration and inconvenience for passengers. Additionally, the bus schedule itself is complicated and difficult for newcomers to understand, as it uses undefined abbreviations for landmark destinations, making it unclear what they represent. Planning trips within the campus is further complicated by a lack of familiarity with bus routes, poorly labeled campus maps, and the absence of details about intermediate bus stops along the routes. These issues collectively make navigating UTM’s bus system challenging and inefficient for its users.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To address the challenges stated above, we proposed to create a comprehensive web application to improve navigation and convenience for users. The web app will feature real-time bus tracking, enabling users to monitor bus locations and anticipate their arrival at stops along the route. An interactive map will be integrated to display bus routes clearly, assisting users in exploring UTM and planning their trips efficiently. Additionally, the app will compile essential resources, such as shuttle bus maps, schedules provided by UTM Fleet, and instructional videos to familiarize users with bus route locations and key landmarks. To ensure continuous improvement and user satisfaction, a feedback module will be included, allowing users to report issues, suggest improvements, and share their experiences with the service. 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+Our Member (Smooth Operator):
+1. Angeline
+2. Patrick
+3. Karim
